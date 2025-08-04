@@ -1,0 +1,30 @@
+{
+  "name": "middle-worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kiasoh/middle-worker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kiasoh/middle-worker/issues"
+  },
+  "homepage": "https://github.com/Kiasoh/middle-worker#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^24.2.0",
+    "@types/node-fetch": "^2.6.13",
+    "dotenv": "^17.2.1",
+    "typescript": "^5.9.2"
+  }
+}
