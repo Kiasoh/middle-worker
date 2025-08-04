@@ -11,6 +11,10 @@ build/
 *.js
 *.js.map
 *.d.ts
+*.ts
+*.ts.map
+*.d.ts
+
 
 # Logs
 logs/
