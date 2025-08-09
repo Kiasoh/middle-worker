@@ -3,6 +3,14 @@
 A Cloudflare Worker that generates travel itineraries using an LLM API and stores job status/results in Firestore.
 
 ---
+## Hi Selected.org !
+
+- [this is a little message for you if you are comming from Selected.org](./report.md)
+
+
+---
+
+
 
 ## Features
 
@@ -88,43 +96,10 @@ wrangler dev
 Deploy your worker to Cloudflare's edge:
 
 ```sh
-wrangler publish
+wrangler deploy
 ```
 
 - After deployment, your worker will be available at the URL shown in the output.
-
----
-
-## Firestore Integration Notes
-
-- This worker uses the Firestore REST API, not the Firebase JS SDK (which is not supported in Workers).
-- You must provide a way to obtain an OAuth2 access token for Firestore REST API requests.  
-  Typically, this is done using a Google service account JSON and JWT flow.
-- Store your service account JSON as a Wrangler secret (`FIREBASE_SERVICE_ACCOUNT_JSON`) and implement token generation in your code.
-
----
-
-## Project Structure
-
-```
-src/
-  handlers/handler.ts      # Worker entry point
-  services/service.ts      # Business logic
-  repositories/llm_repo.ts # LLM API integration
-  repositories/firestore_repo.ts # Firestore REST API integration
-  utils/util.ts            # Utility functions
-  domain/types/type.ts     # Type definitions
-  bootstrap/firestore_bootstrap.ts # (If using SDK locally)
-```
-
----
-
-## Troubleshooting
-
-- **Firestore errors:**  
-  Ensure you are using the REST API and have valid credentials and project info.
-- **Missing environment variables:**  
-  Double-check all required secrets and vars are set via Wrangler.
 
 ---
 
