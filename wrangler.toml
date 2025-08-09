@@ -1,0 +1,12 @@
+name = "llm-worker"
+type = "javascript"
+
+account_id = "98096829375b2a03da65aa8cf7af3322"
+workers_dev = true
+compatibility_date = "2025-08-04"
+
+main = "src/handlers/handler.ts"
+
+[vars]
+LLM_API_URL = "https://api.together.xyz/v1/chat/completions"
+LLM_MODEL = "meta-llama/Llama-3-8b-chat-hf"
