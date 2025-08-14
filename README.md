@@ -1,6 +1,10 @@
 # llm-worker
 
-A Cloudflare Worker that generates travel itineraries using an LLM API and stores job status/results in Firestore.
+A Cloudflare Worker that generates travel itineraries using an LLM API and stores job status/results in Firestore. 
+
+---
+
+### incomplete project
 
 ---
 ## Hi Selected.org !
